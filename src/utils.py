@@ -6,6 +6,7 @@ import dill
 from sklearn.metrics import r2_score
 
 from src.exception import CustomException
+from sklearn.model_selection import GridSearchCV
 
 
 def save_object(file_path, obj):
@@ -21,12 +22,24 @@ def save_object(file_path, obj):
         raise CustomException(e,sys)
     
     
-def evaluate_models(X_train, y_train, X_test, y_test, models):
+def evaluate_models(X_train, y_train, X_test, y_test, models, params):
     try:
         report = {}
         
         for i in range(len(list(models))):
             model = list(models.values())[i]
+            para = params[list(models.keys())[i]]
+            
+            gs = GridSearchCV(model,para,cv=3)
+            gs.fit(X_train,y_train)
+            '''
+            model.set_params(**gs.best_params_) sets the hyperparameters of the machine learning model (model) to 
+            the best hyperparameters found during the grid search (gs.best_params_). This is a convenient way to 
+            update the model with the optimal configuration determined by the grid search process.
+            Important: not all models contains set_params method in it
+            '''
+
+            model.set_params(**gs.best_params_)
             
             model.fit(X_train, y_train)
             
