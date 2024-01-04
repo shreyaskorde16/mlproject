@@ -75,7 +75,7 @@ class DataTransformation:
             test_df = pd.read_csv(test_path)
             #logging.info(train_df.head())
             logging.info("Read train and test data completed")
-            logging.info(f"The column names are {train_df.columns}")
+            #logging.info(f"The column names are {train_df.columns}")
             logging.info("Obtaining preprocessing object")
             preprocessing_obj = self.get_data_transformer_object()
             
@@ -102,7 +102,13 @@ class DataTransformation:
             
             input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr=preprocessing_obj.transform(input_feature_test_df)
-            
+            '''
+            These steps are common in machine learning pipelines where you want to ensure that the same 
+            preprocessing steps are applied consistently to both the training and test datasets. 
+            The fit_transform method is used on the training data to learn the transformation, 
+            while the transform method is used on subsequent datasets to apply the same transformation 
+            without re-learning parameters.
+            '''
             train_arr = np.c_[input_feature_train_arr, np.array(target_feature_train_df)]
             test_arr = np.c_[input_feature_test_arr, np.array(target_feature_test_df)]
             
