@@ -46,4 +46,6 @@ This project aims to find the best model for the dataset base on r2_score among 
 `Docker`: Docker file to build docker image name as 
 [shreyaskorde16/student_performance](https://hub.docker.com/r/shreyaskorde16/student_performance/tags)
 
+<img src="https://github.com/shreyaskorde16/mlproject/blob/main/Screenshot%202024-01-05%20230547.png" width="1100" height= "700" />
+
 
