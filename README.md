@@ -6,6 +6,7 @@
 This project aims to find the best model for the dataset base on r2_score among Linear Regression, Random Forest Regressor, Decision Tree Regressor, Gradient Bosting regressor, K-Neighbor Regressor, XGBRegressor, Cat Boost regressor, AdaBoost regressor using Hyperparameter tunning and GridsearcCV.
 
 <p align="justify">
+ 
 ### Life cycle of Machine learning Project
  + **Problem statement**: This project investigates how additional variables such as gender, ethnicity, parental level of education, lunch, and test preparation course affect student performance (test scores).
    
