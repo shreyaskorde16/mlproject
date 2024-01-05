@@ -3,7 +3,7 @@
 
 ## Name: Student Performance Prediction 
 
-<img src="https://github.com/shreyaskorde16/mlproject/blob/main/prediction_homepage.png" width="900" height= "500" align="center" style="border: 2px solid #000000;"/>
+<img src="https://github.com/shreyaskorde16/mlproject/blob/main/prediction_homepage.png" width="900" height= "500" align="centre" style="border: 2px solid #000000;"/>
 
 
 <p align="justify">
