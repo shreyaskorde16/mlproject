@@ -2,6 +2,9 @@
 
 
 ## Name: Student Performance Prediction 
+<img src="https://github.com/shreyaskorde16/mlproject/blob/main/Screenshot%202024-01-05%20230547.png" width="500" height= "500" />
+
+
 <p align="justify">
 This project aims to find the best model for the dataset base on r2_score among Linear Regression, Random Forest Regressor, Decision Tree Regressor, Gradient Bosting regressor, K-Neighbor Regressor, XGBRegressor, Cat Boost regressor, AdaBoost regressor using Hyperparameter tunning and GridsearcCV.
 
