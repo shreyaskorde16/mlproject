@@ -2,7 +2,7 @@
 
 
 ## Name: Student Performance Prediction 
-<img src="https://github.com/shreyaskorde16/mlproject/blob/main/Screenshot%202024-01-05%20230547.png" width="1100" height= "700" />
+<img src="https://github.com/shreyaskorde16/mlproject/blob/main/Screenshot%202024-01-05%20222326.png" width="1100" height= "700" />
 
 
 <p align="justify">
