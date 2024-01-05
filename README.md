@@ -8,7 +8,6 @@ This project aims to find the best model for the dataset base on r2_score among 
 ### Life cycle of Machine learning Project
  + **Problem statement**: This project investigates how additional variables such as gender, ethnicity, parental level of education, lunch, and test preparation course affect student performance (test scores).
    
-  <p align="justify">
  + **Data collection**: Dataset source https://www.kaggle.com/datasets/spscientist/students-performance-in-exams?datasetId=74977 This data set consists of the marks secured by the students in various subjects. Inspiration is understanding the influence of the parent's background, test preparation, etc on students' performance.
 
  + **Dataset Information**:
